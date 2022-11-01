@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This app was made following the WebTechTalk course, with some changes in the implementation.
   credits to [WebTechTalk](https://www.youtube.com/playlist?list=PLoC8Q0moRTSj9621k87pLtAc2MFn8XcLn)
+  
+Icon used was extracte from [IconIcons page](https://icon-icons.com/icon/fast-foods-potato-french-fries-food/107423).
 
 ## Development server
 
