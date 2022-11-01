@@ -10,11 +10,11 @@
             </div>
             <div class="movies-thumbnails">
                 <div class="movie" *ngFor="let movie of trendingMovies">
-                    <div class="cover">
+                    <div class="cover" (click)="goToMovie('trending', movie.id)">
                         <img [src]="movie.cover" alt="">
                     </div>
                     <div class="detail">
-                        <div class="name">{{movie.name}}</div>
+                        <div class="name" (click)="goToMovie('trending', movie.id)">{{movie.name}}</div>
 
                         <div class="rating">
                             <ngb-rating [(rate)]="movie.rating" [readonly]="true" [max]="5"></ngb-rating>
@@ -34,11 +34,11 @@
             </div>
             <div class="movies-thumbnails">
                 <div class="movie" *ngFor="let movie of theatreMovies">
-                    <div class="cover">
+                    <div class="cover" (click)="goToMovie('theatre', movie.id)">
                         <img [src]="movie.cover" alt="">
                     </div>
                     <div class="detail">
-                        <div class="name">{{movie.name}}</div>
+                        <div class="name" (click)="goToMovie('theatre', movie.id)">{{movie.name}}</div>
 
                         <div class="rating">
                             <ngb-rating [(rate)]="movie.rating" [readonly]="true" [max]="5"></ngb-rating>
@@ -58,11 +58,11 @@
         </div>
         <div class="movies-thumbnails">
             <div class="movie" *ngFor="let movie of popularMovies">
-                <div class="cover">
+                <div class="cover" (click)="goToMovie('popular', movie.id)">
                     <img [src]="movie.cover" alt="">
                 </div>
                 <div class="detail">
-                    <div class="name">{{movie.name}}</div>
+                    <div class="name" (click)="goToMovie('popular', movie.id)">{{movie.name}}</div>
 
                     <div class="rating">
                         <ngb-rating [(rate)]="movie.rating" [readonly]="true" [max]="5"></ngb-rating>
