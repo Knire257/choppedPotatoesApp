@@ -1,0 +1,123 @@
+.movie-container {
+    width: 1400px;
+    margin: o auto;
+
+    .top {
+        display: flex;
+
+        .left {
+            width: 450px;
+            margin-left: 30px;
+
+            .name {
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+            .rating {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                font-size: 22px;
+                color: red;
+
+                .rating-note {
+                    color: black;
+                    margin-left: 15px;
+                }
+            }
+
+            .cover {
+                width: 400px;
+                height: 500px;
+                margin-right: 50px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: covers;
+                }
+            }
+        }
+
+        .right {
+            width: 900px;
+            padding-top: 100px;
+            .title {
+                margin-bottom: 30px;
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .rating-form {
+                .form-group {
+                    margin-top: 20px;
+                }
+                label {
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    margin-right: 15px;
+                }
+                
+                textarea {
+                    resize: none;
+                }
+                .btn-container {
+                   margin-top: 30px; 
+                }
+            }
+        }
+
+    }
+
+    .bottom {
+        margin-top: 50px;
+        margin-left: 30px;
+        .title {
+            margin-bottom: 30px;
+        }
+        .reviews {
+            width: 1000px;
+            .review {
+                margin-bottom: 25px;
+                background-color: #f1f1f1;
+                padding: 20px;
+                border-radius: 20px;
+                margin-left: 40px;
+                .review-details {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+                    .review-left {
+                        .author {
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                        .published-date {
+                            padding-top: 10px;
+                        }
+                        .review-text {
+                            padding-top: 15px;
+                            padding-left: 20px;
+                        }
+                    }
+                    .review-right {
+                        .rating-note {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .no-reviews {
+                font-size: 20px;
+                padding-left: 30px;
+                font-style: italic;
+            }
+        }
+    }
+
+
+
+    .rating-stars {
+        font-size: 30px;
+        color: red;
+    }
+}
