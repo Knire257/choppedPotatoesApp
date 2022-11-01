@@ -1,4 +1,4 @@
-# RottenPotatosApp
+# ChoppedPotatosApp
 
 An app for rating a selection of movies made in Angular and TypeScript. It includes a rating, a login and a create user functionalities.
 
